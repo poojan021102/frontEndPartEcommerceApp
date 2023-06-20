@@ -19,7 +19,7 @@ function Payment({onChange}) {
         for(let i = 0;i<user.cart.length;++i)price+=user.cart[i].price*user.cart[i].qty;
         const gstClientSecret = async () => {
           try{
-              let resp = await axios.post("http://localhost:5252/create-payment-intent", {price:price})
+              let resp = await axios.post("https://e-commerce-payment-backend.onrender.com/create-payment-intent", {price:price})
               setClientSecret(resp.data.clientSecret);
           }
           catch(err){
