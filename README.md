@@ -1,1 +1,1 @@
-# frontEndPartEcommerceApp
+# ecommerce-app
