@@ -29,7 +29,7 @@ export default function CheckoutForm({onChange}) {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: `${window.location.origin}/completion`,
+        return_url: `https://verdant-klepon-fb26f1.netlify.app/completion`,
       },
     });
 
